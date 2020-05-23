@@ -1,44 +1,62 @@
 * {
   font-family: monospace;
-  background-color: #ffffff;
   font-size: 108%;
   box-sizing: border-box;
   word-wrap: break-word;
   font-family: 'EB Garamond', serif;
-  position: relative;
 }
 
 body {
-
-
+  width: 100%;
+  margin: 0%;
+  margin-left: 0;
+  text-rendering: optimizeSpeed;
+  text-overflow: ellipsis;
+  text-align: justify;
 }
 
-header {
-  background-color: red;
-  display: block;
-  width: 60%;
+#header {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid black;
+  background-color: #00f0aa;
+  float: left;
 }
 
 #name {
   text-align: left;
   padding: 1%;
-  font-size: 310%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  font-size: 250%;
+  display: inline-block;
+  margin-top: .5%;
+  margin-bottom: .5%;
+  margin-left: 1%;
+  float: left;
+  clear: both;
+  text-shadow: 2px 2px 3px white;
 }
 
 #revisit {
-  margin-top: 3%;
-  margin-left: 1%;
-  display: block;
+  margin-top: 2%;
+  margin-bottom: 0;
+  margin-left: 3%;
+  margin-right: .5%;
+  display: inline-block;
+  width: 97.5%;
+  padding-top: 1%;
 }
 
 h1 {
-  font-size: 140%;
+  font-size: 110%;
   text-transform: uppercase;
-  position: absolute;
-  top: 0;
-  right: 1%;
+  display: inline-flex;
+  float: right;
+  clear: right;
+  height: 25%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  margin-right: 1.75%;
+  text-shadow: 2px 2px 8px black;
 }
 
 h3 {
@@ -51,44 +69,66 @@ h4 {
   font-size: 127%;
 }
 
+li {
+  padding: 0%;
+}
+
+#p1, #p2 {
+  text-indent: 5%;
+  margin-left: 3%;
+  margin-right: 3.25%;
+  width: 93.75%;
+}
+
 .resources li a:hover {
   background-color: black;
   color: white;
+  border: 1px double white;
 }
 
 .resources li a:link {
+  color: black;
   text-decoration: none;
-  padding: 6.5%;
+  padding: 5.5%;
+  padding-left: 0%;
+  padding-right: 0%;
   text-align: center;
-  display: inline;
+  display: inline-block;
   width: 100%;
-  height: 100%;
+  background-color: #ffaafa;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 ul.resources li {
+  text-align: center;
   list-style: none;
   margin: 1%;
-  border: 1px solid blue;
+  margin-left: 1%;
+  margin-right: 1%;
+  border: 1px double black;
   display: inline-flex;
-  width: 31.1%;
+  width: 31%;
   height: 100%;
-  vertical-align: middle;
-
 }
 
 ul.resources {
   margin-top: 1%;
   margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: .5%;
   display: inline-block;
-  clear: both;
   padding: 1%;
-  width: 100%;
-  align-items: center;
+  width: 98.5%;
+  text-align: center;
 }
 
 #someResources {
   margin-top: 2%;
-  margin-bottom: 0;
+  margin-bottom: 1%;
   font-style: italic;
   text-align: center;
 }
@@ -97,43 +137,173 @@ ul.resources {
   margin-top: 2%;
   margin-bottom: 2%;
   display: block;
+  text-transform: uppercase;
+  text-align: center;
 }
 
+#CONSIDER {
+  font-style: italic;
+  text-transform: uppercase;
+  padding: .5%;
+}
 #consider {
-  list-style: square;
+  list-style: lower-greek;
   display: block;
   font-style: italic;
   font-size: 92%;
+  text-transform: none;
 }
 
 #ToDo {
   font-size: 115%;
+  padding-inline-start: 5%;
+}
+
+#ToDo li {
+  padding: .2%;
 }
 
 img {
   display: block;
   margin-top: 2%;
   margin-bottom: 2%;
+  width: 93.75%;
+  margin-left: 3%;;
+  margin-right: 3.25%;
+}
+
+footer {
+  text-align: center;
+  width: 99.75%;
+  margin-right: .25%;
 }
 
 @media (max-width: 767px) {
   * {
-    font-size: 95%;
+    font-size: 100%;
   }
 
   h1 {
     color: blue;
+    text-align: center;
+    float: none;
+    display: block;
+    margin-top: 0;
+    text-shadow: 1px 1px 4px white;
   }
+
+  #header {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid black;
+    background-color: #00f0aa;
+  }
+
+  #name {
+    display: block;
+    text-align: center;
+    width: 98%;
+    margin: 1%;
+  }
+
+  ul.resources {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: inline-block;
+    padding: 1%;
+    width: 100%;
+  }
+
+  ul.resources li {
+    list-style: none;
+    border: 1px solid black;
+    display: inline-block;
+    width: 98%;
+    font-size: 160%;
+  }
+
+  .resources li a:link {
+    color: black;
+    text-decoration: none;
+    padding: .75%;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding-top: 4.5%;
+    padding-bottom:  4.5%;
+  }
+
+  #ToDo {
+    margin-left: 4.5%;
+    margin-top: 1.5%;
+  }
+
+  #revisit {
+    margin-left: 2.5%;
+    margin-top: 4%;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   h1 {
     color: red;
+    margin-right: 1%;
+    font-size: 100%;
+    margin-top: 4%;
   }
+
+  #header {
+    display: inline-block;
+    width: 101%;
+    border: 1px solid black;
+    background-color: #0fffaa;
+  }
+
+  ul.resources {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    display: inline-block;
+    padding: 1%;
+    width: 98%;
+    text-align: center;
+
+  }
+
+  ul.resources li {
+    list-style: none;
+    border: 1px solid blue;
+    display: inline-block;
+    width: 98%;
+  }
+
+  .resources li a:link {
+    color: black;
+    text-decoration: none;
+    padding: .75%;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding-top: 4.5%;
+    padding-bottom:  4.5%;
+  }
+
+  #revisit {
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+
+  #ToDo {
+    margin-left: 3%;
+    margin-bottom: 3%;
+  }
+
+
 }
 
 @media (min-width: 992px) {
   h1 {
-    color: green;
+    color: white;
   }
 }
