@@ -82,12 +82,68 @@ footer > p {
   section {
     width: 32%;
     height: 35%;
+    margin-bottom: 10%;
   }
 
   #menu {
     font-size: 200%;
+    margin-top: 7%;
+    margin-bottom: 6%;
   }
 
+}
+
+  /* Account for large screens and wide screens */
+@media (min-width: 1049px) and (max-width: 1137px){
+  #chicken > p {
+    padding-bottom: 38%;
+  }
+}
+
+@media (min-width: 1117px) and (max-width: 1137px) {
+  #beef > p {
+    padding-bottom: 37.5%;
+  }
+}
+
+@media (min-width: 1534px) {
+  #chicken > p {
+    padding-bottom: 33.5%;
+  }
+}
+
+@media (min-width: 1410px) {
+  section {
+    margin-top: 1%;
+  }
+  #menu {
+    margin-bottom: 6%;
+  }
+}
+
+@media (min-width: 1530px) {
+  section {
+    margin-bottom: 2%;
+  }
+
+  #menu {
+    margin-top: 4%;
+  }
+}
+
+@media (min-width: 1675px) {
+  #beef > p {
+    padding-bottom: 33.25%;
+  }
+  #chicken > p {
+    padding-bottom: 33.25%;
+  }
+}
+
+@media (min-width: 1682px) {
+  #seafood > p {
+    padding-bottom: 33.25%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
